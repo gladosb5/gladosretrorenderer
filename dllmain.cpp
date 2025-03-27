@@ -66,7 +66,7 @@ int Render(uintptr_t L)
     RenderView::renderThumb((DWORD*)viewBase, 0);
     SaveFile::saveRenderTarget((DWORD*)viewBase, 0, path); // you could also use the screenshot function however that yields lower quality results //gladosb5 -- lower quality more retro
 
-    std::cout << "rendered!" << std::endl;
+    std::cout << "rendered! check your png thing" << std::endl;
 
     Sleep(500); // optional, but keeping incase.
 
