@@ -11,25 +11,23 @@ then like u open the studpe or if your lazy just use extreme injector... i DONT 
 so in studpe you go to drag the robloxstudio.exe yaya and u have to yaya like yay and yay and like you have to
 go to functions, like right click on the LEFT side in the EMPOTY space and like u need to like click on new impoort that whatever then
 you uhh need to like select your dll "rbxrenderhook" and yeah. thats it ok yeah and also if it asys missing dll oH NO!!! then u need to
-download theseee dlls yeah
+like put the dlls in the dll folder to the roblox studio thing.
 
-## Functions  
-`render(filepath, x, y, url)`  
-Example:  
-`render("TestRender.png", 1280, 720, "http://www.roblox.com")`  
-
-The URL is where the image gets sent. If you don't want to send it, use a **random valid URL** instead.  
+## okok how i us this i bad i need..
+just take this goddamnit
+render("skidder.png", 1280, 720, "http://www.roblox.com")
+how??:
+render("filenameyesyes", dimention, dimestion, "url 2 sent 2 yes 2")
+if ur wonderthing where the http://www.roblox.com/ is here justi gnore it unless if you want to
   
-## Troubleshooting
-1. Help! It's crashing!  
-  - Make sure you compiled in **DEBUG** mode and that you're using **OPENGL**
-
-2. I have no sky in my renders!
-  - Make sure you are using **OPENGL**. **Direct3D** often makes the sky invisible.  
+## how 2 fix
+1. it crashed.
+just use debug mode lah u dont know instruction?? or turn it into opengl..
+2. i have NO SKY and everything is black
+use opengl and not direct something...
   
-## FAQ
-1. Can you hide the sky?
-  - **Yes! You can.** Just change from OpenGL to Direct3D in studio settings, and also change **ViewBase::CreateView** to **Direct3D9** instead of **OpenGL**  
-  
-2. Why release this?  
-   - I believe that a lot of revivals would benefit from this a lot, and I don't think that this should be gatekept.  
+## funss and quests
+1. can you hide sky?
+ya u can just change from opengl to direct something and use ViewBase::CreateView to put also direct somethign yeah
+2. did you skid?
+if its not obvious enoguh yes i skidded becuase i cannot code yeah i wanna try something with this project. or abondond theit
