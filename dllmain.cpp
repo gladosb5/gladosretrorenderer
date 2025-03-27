@@ -21,8 +21,6 @@ bool isReady = false;
 
 DWORD* gScriptContext = nullptr;
 
-// ARGS:
-// render(path, x, y, url) (image gets POST to the url, set the url to a random VALID url if you don't want to do that)
 int Render(uintptr_t L)
 {
     size_t length = 0;
@@ -41,14 +39,14 @@ int Render(uintptr_t L)
     CURLUcode result = curl_url_set(_curl, CURLUPART_URL, url, 0);
 
     if (result != CURLE_OK) {
-        std::cout << "the url you entered is invalid" << std::endl;
+        std::cout << "the url you entered is invalid" << std::endl; //if cannot get ping ping
         curl_easy_cleanup(_curl);
         return 0;
     }
 
     curl_easy_cleanup(_curl);
     
-    HWND window = FindWindowA(nullptr, "Roblox"); // this doesn't matter.
+    HWND window = FindWindowA(nullptr, "Roblox"); // this doesn't matter. //gladosb5 -- ok why u ad this.
     SetWindowPos(window, 0, 0, 0, x, y, 0);
     OSContext context{ window , x , y };
 
@@ -66,9 +64,9 @@ int Render(uintptr_t L)
     Lighting::setupLighting((DWORD*)datamodel, 0);
     BindW::bindWorkspace((DWORD*)viewBase, 0, datamodel, 0);
     RenderView::renderThumb((DWORD*)viewBase, 0);
-    SaveFile::saveRenderTarget((DWORD*)viewBase, 0, path); // you could also use the screenshot function however that yields lower quality results
+    SaveFile::saveRenderTarget((DWORD*)viewBase, 0, path); // you could also use the screenshot function however that yields lower quality results //gladosb5 -- lower quality more retro
 
-    std::cout << "saved!" << std::endl;
+    std::cout << "rendered!" << std::endl;
 
     Sleep(500); // optional, but keeping incase.
 
@@ -99,7 +97,7 @@ int Render(uintptr_t L)
 
     }
     else {
-        std::cout << "error happeneed with curl";
+        std::cout << "your curl is not curling, please get a new curl to get curling.";
     }
 
     return 0;
@@ -150,7 +148,7 @@ BOOL APIENTRY DllMain(HMODULE hModule,
         freopen("conin$", "r", stdin);
         freopen("conout$", "w", stdout);
         freopen("conout$", "w", stderr);
-        SetConsoleTitle(L"RbxRenderHook");
+        SetConsoleTitle(L"gladosretrorenderer");
 
         DetourTransactionBegin();
         DetourUpdateThread(GetCurrentThread());
