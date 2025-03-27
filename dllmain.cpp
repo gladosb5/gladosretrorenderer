@@ -39,7 +39,7 @@ int Render(uintptr_t L)
     CURLUcode result = curl_url_set(_curl, CURLUPART_URL, url, 0);
 
     if (result != CURLE_OK) {
-        std::cout << "the url you entered is invalid" << std::endl; //if cannot get ping ping
+        std::cout << "your domain is NOT working, use a valid domain if you wanna just local png png." << std::endl; //if cannot get ping ping
         curl_easy_cleanup(_curl);
         return 0;
     }
