@@ -1,11 +1,17 @@
-# 2012-renderer  
-An open-source place renderer for the version 0.69.0.646 Roblox Studio version (compatible with later versions, this was for December 2012 originally)  
-You can get this client here: https://archive.org/details/roblox-studio_20250323  
+# 2012-gladosretrorenderer
+it is a renderer made by h4606 skidded by gladosb5 yes yes use this client for the BEST experience of YOUR life.
+https://archive.org/details/roblox-studio_20250323  
 
-## Usage  
-Compile the project in **DEBUG** mode (Release mode could cause issues)  
-Open the **MFCStudio** (RobloxApp clients are not compatible, no idea why)  
-Run the **render** function (read functions below)
+## how 2 compilered?
+ok so so skidders here you go:
+download or use git clone lolol then
+open the sln thing and also like right click on the rbxrenderhook yaya adn u have to like
+open confiration manager and like set release to debug and x64 to x32 becuz roblox no no like x64..
+then like u open the studpe or if your lazy just use extreme injector... i DONT care.
+so in studpe you go to drag the robloxstudio.exe yaya and u have to yaya like yay and yay and like you have to
+go to functions, like right click on the LEFT side in the EMPOTY space and like u need to like click on new impoort that whatever then
+you uhh need to like select your dll "rbxrenderhook" and yeah. thats it ok yeah and also if it asys missing dll oH NO!!! then u need to
+download theseee dlls yeah
 
 ## Functions  
 `render(filepath, x, y, url)`  
